@@ -5,14 +5,21 @@ import banner from '../../assets/img/banner.png'
 const width = Dimensions.get('screen').width
 
 const Banner = () => {
-    return <>
-        <Image source={banner} style={styles.topo} />
-        <Text style={styles.titulo}>Esse é o nosso titulo</Text>
-    </>
+    return (
+        <View style={styles.container}>
+            <Image source={banner} style={styles.topo} />
+            <Text style={styles.titulo}>Esse é o nosso titulo</Text>
+        </View>
+
+    )
 }
 
 
 const styles = StyleSheet.create({
+    container: {
+        position: "relative"
+    },
+
     topo: {
         maxWidth: "100%",
         height: width
@@ -20,9 +27,15 @@ const styles = StyleSheet.create({
 
     titulo: {
         position: "absolute",
-        top: 0,
-        color: "white",
-    }
+        width: "100%",
+        textAlign: "center",
+        color: "blue",
+        fontSize: 16,
+        fontWeight: "bold",
+        padding: 16,
+    },
+
+
 })
 
 
