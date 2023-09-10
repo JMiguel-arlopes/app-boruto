@@ -10,10 +10,8 @@ const Banner = () => {
             <Image source={banner} style={styles.topo} />
             <Text style={styles.titulo}>Esse é o nosso titulo</Text>
         </View>
-
     )
 }
-
 
 const styles = StyleSheet.create({
     container: {
@@ -33,12 +31,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: "bold",
         padding: 16,
-    },
-
-
+    }
 })
-
-
-
 
 export default Banner
