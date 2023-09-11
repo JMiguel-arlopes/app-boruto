@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text, Image } from "react-native";
 import konoha from "../../assets/img/konoha.jpg"
+
 const Venda = () => {
     return (
         <View style={styles.container}>
@@ -30,7 +31,8 @@ const styles = StyleSheet.create({
         color: "black",
         fontSize: 26,
         fontWeight: "bold",
-        lineHeight: 35
+        lineHeight: 35,
+        fontFamily: "poppins"
     },
     row: {
         flexDirection: "row",
@@ -49,7 +51,8 @@ const styles = StyleSheet.create({
     descricao: {
         color: "#A3A3A3",
         fontSize: 14,
-        fontWeight: "500"
+        fontWeight: "500",
+        fontFamily: "poppins"
     },
     preco: {
         color: "darkgreen",
