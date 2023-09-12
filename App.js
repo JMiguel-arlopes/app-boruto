@@ -1,28 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Banner from './src/Banner';
-import Venda from './src/Venda';
+import Loja from './src/telas/Loja'
+import mock from './src/mocks/loja'
 import {
   useFonts,
-  Poppins_400Regular
-} from '@expo-google-fonts/poppins';
+  Jost_400Regular,
+  Jost_700Bold
+} from '@expo-google-fonts/jost';
 
 export default function App() {
 
   const [fonte_load] = useFonts({
-    "poppins": Poppins_400Regular
+    "jostRegular": Jost_400Regular,
+    "jostBold": Jost_700Bold
   })
 
   if (!fonte_load) {
-    <View />
+    return <View />
   }
 
   return (
     <View>
       {/* <StatusBar style="auto" /> */}
-      <Text>Me acharam</Text>
-      <Banner />
-      <Venda />
+      <Loja {...mock} />
     </View>
   );
 }
