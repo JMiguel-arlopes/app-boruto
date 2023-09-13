@@ -4,11 +4,11 @@ import banner from '../../../../assets/img/banner.png'
 
 const width = Dimensions.get('screen').width
 
-const Banner = () => {
+const Banner = ({ titulo }) => {
     return (
         <View style={styles.container}>
             <Image source={banner} style={styles.topo} />
-            <Text style={styles.titulo}></Text>
+            <Text style={styles.titulo}>{titulo}</Text>
         </View>
     )
 }
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         width: "100%",
         textAlign: "center",
-        color: "blue",
+        color: "#fafafa",
         fontSize: 16,
         fontWeight: "bold",
         padding: 16,

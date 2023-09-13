@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         borderBottomWidth: 1,
         borderBottomColor: "#ACACAC",
-        paddingVertical: 5
+        paddingVertical: 16,
+        marginHorizontal: 16,
     },
 
     img: {
